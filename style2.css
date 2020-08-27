@@ -1,0 +1,76 @@
+/* Css pra configuração geral do calendario*/
+body{
+    background-color: #111;
+    color: #eee;
+}
+#titulo{
+    text-align: center;
+}
+#calendario-pequeno{
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #222;
+    color: #ddd;
+}
+table{
+    border: 1px solid #ddd;
+}
+.dias-da-semana{
+    color: #eee;
+}
+.form-inline{
+    text-align: center;
+    margin-top: -10px;
+}
+ul{
+    list-style-type: none;
+}
+
+
+/* Css para os botões de proximo e anterior*/
+#anterior, #proximo, #hoje, #pagina-de-inicio{
+    color: #ddd;
+	background: #111;
+	border-radius: 0;
+	padding: 0.3em 0.7em;
+	transition: background-color .2s, box-shadow .2s, color .2s;
+	border: #ddd solid 2px;
+}
+#anterior:hover, #proximo:hover, #hoje:hover, #pagina-de-inicio:hover{
+    color:#111;
+    background-color: #ddd;
+}
+
+/* Css para o selecionador de opções*/
+
+option{
+    background-color: #111;
+    color: #ddd;
+}
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 280px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #0c0c0c; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+  /* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+  /* Style page content */
+.main {
+    margin-left: 280px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}

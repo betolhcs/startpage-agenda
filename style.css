@@ -1,0 +1,88 @@
+/* Css pra configuração geral do calendario*/
+body{
+    background-color: #111;
+    color: #eee;
+}
+#titulo{
+    text-align: center;
+}
+#calendario-pequeno{
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #222;
+    color: #ddd;
+}
+table{
+    border: 1px solid #ddd;
+}
+.dias-da-semana{
+    color: #eee;
+}
+.form-inline{
+    text-align: center;
+    margin-top: -10px;
+}
+ul{
+    list-style-type: none;
+}
+
+/* Css para a barra de pesquisa do google */
+.search-form{
+    margin-top: 10px;
+    color: #ddd;
+    background: none;
+    transition: border 0.2s ease;
+    padding:8px;
+    border:none;
+    border-bottom:3px solid #222;
+    width:30%
+}
+.search-form:focus{
+    outline: 0;
+    border: 0;
+    border-bottom: 3px solid #ddd;
+}
+
+/* Css para os links */
+.link-container{
+    display: inline-block;
+    vertical-align: top;
+}
+.link{
+    position: relative;
+    color: #999;
+    text-decoration: none;
+    line-height: 22px;
+    transition: color .2s ease-in-out;
+}
+.link:hover {
+    color: #eee;
+    background-color: #0c0c0c;
+}
+.link:before,
+.link:after{
+    content: '';
+    position: absolute;
+    transition: transform .2s ease-in-out;
+}
+
+/* Css para os botões de proximo e anterior*/
+#anterior, #proximo, #hoje{
+    color: #ddd;
+	background: none;
+	border-radius: 0;
+	padding: 0.3em 0.7em;
+	transition: background-color .2s, box-shadow .2s, color .2s;
+	border: #ddd solid 2px;
+}
+#anterior:hover, #proximo:hover, #hoje:hover{
+    color:#111;
+    background-color: #ddd;
+}
+
+/* Css para o selecionador de opções*/
+
+option{
+    background-color: #111;
+    color: #ddd;
+}
