@@ -117,6 +117,6 @@ function atualizaCalendario(mes, ano) {
     }
 
     function iniciaAgenda(ano, mes, dia){
-        window.location.href = "file:///C:/Users/betol/Desktop/PaginaDeInicio-Agenda/agenda.html?dia=" + dia +"&mes=" + mes +"&ano=" + ano;
+        window.location.href = "agenda.html?dia=" + dia +"&mes=" + mes +"&ano=" + ano;
     }
 }
