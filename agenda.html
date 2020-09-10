@@ -8,9 +8,10 @@
 </head>
 <body>
 
+<!-- Codigo do calendario na barra lateral-->
 <div class="sidenav">
     <div>
-        <h3 id="titulo"></h3>
+        <h3 id="calendario-titulo" class="titulo"></h3>
         <table  id="calendario-pequeno" class="calendario">
             <thead>
             <tr class="dias-da-semana">
@@ -23,7 +24,7 @@
                 <th>Sab</th>
             </tr>
             </thead>
-            <tbody id="calendar-body">
+            <tbody id="calendario-corpo">
             </tbody>
         </table>
         <div style="text-align: center; margin-top: 10px;">
@@ -46,16 +47,39 @@
     </div>
 </div>
 
-<!--Codigo do Tabela Gigante do Calendario-->
+<!--Codigo do Titulo da Página-->
+<div class="uppernav"">
+    <h3 id="agenda-titulo" class="titulo"> TiTulo Teste</h3>
+</div>
+
+<!--Codigo do PopUp de evento-->
+<div id="modal-fundo">
+    <div id="modal">
+        <div id="modal-header">Click here to move</div>
+        <p>Move</p>
+        <p>this</p>
+        <p>DIV</p>
+    </div>
+</div>
+
+<!--Codigo da Tabela da Agenda-->
 <div class="main">
-    <table style="position: absolute; top: 0; bottom: 0;">
-        <tr style="height: 25%; font-size: 120px;">
-            <td>Region</td>
+    <table class="agenda" style="position: absolute; top: 80px; bottom: 0; width: 80%; height: 100%;">
+        <thead>
+        <tr>
+            <td style="text-align: center;"></td>
+            <td style="text-align: center;">Dom</td>
+            <td style="text-align: center;">Seg</td>
+            <td style="text-align: center;">Ter</td>
+            <td style="text-align: center;">Qua</td>
+            <td style="text-align: center;">Qui</td>
+            <td style="text-align: center;">Sex</td>
+            <td style="text-align: center;">Sab</td>
         </tr>
-        <tr style="height: 75%; font-size: 120px;">
-            <td>100.00%</td>
-        </tr>
+        </thead>
+        <tbody id="agenda-corpo">
+        </tbody>
     </table>
 </div>
 
-<script src="scripts.js"></script>
+<script src="agenda.js"></script>

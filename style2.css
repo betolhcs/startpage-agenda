@@ -3,7 +3,7 @@ body{
     background-color: #111;
     color: #eee;
 }
-#titulo{
+.titulo{
     text-align: center;
 }
 #calendario-pequeno{
@@ -58,7 +58,7 @@ option{
     left: 0;
     background-color: #0c0c0c; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
+    padding-top: 60px;
 }
 
   /* The navigation menu links */
@@ -69,8 +69,50 @@ option{
     color: #818181;
     display: block;
 }
+
+.uppernav {
+    width: 90%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    margin-left: 260px;
+    background-color: #0c0c0c; /* Black */
+    overflow-x: hidden;
+}
   /* Style page content */
 .main {
     margin-left: 280px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
+}
+
+.agenda{
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+#modal-fundo {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background: none;
+}
+
+#modal {
+    position: absolute;
+    z-index: 9;
+    background-color: #0c0c0c;
+    color: #ccc;
+    text-align: center;
+}
+
+#modal-header {
+    padding: 2px;
+    cursor: move;
+    z-index: 10;
+    background-color: #222;
+    color: #ddd;
 }
