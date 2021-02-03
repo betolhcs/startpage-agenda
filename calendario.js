@@ -13,7 +13,7 @@ let botaoAnterior = document.getElementById("anterior")
 let botaoProximo = document.getElementById("proximo")
 
 for (let i = 0; i < 12; i++){
-    let item = document.createElement("option")  // Cria o selecionador de anos com o ultimo e proximo ano
+    let item = document.createElement("option")  // Cria o selecionador de meses
     item.value = i
     item.textContent = meses[i]
     listaDeMeses.appendChild(item)
@@ -27,7 +27,7 @@ for (let i = 0; i < 3; i++){
 }
 
 let tituloCalendario = document.getElementById("calendario-titulo")
-atualizaCalendario(mesAtual, anoAtual)
+
 
 function proximo() {
     anoAtual = (mesAtual === 11) ? anoAtual + 1 : anoAtual
@@ -51,11 +51,7 @@ function jump() {
     anoAtual = parseInt(listaDeAnos.value)
     mesAtual = parseInt(listaDeMeses.value)
     atualizaCalendario(mesAtual, anoAtual)
-}
-
-function voltaProInicio(){
-    window.location.href = "file:///C:/Users/betol/Desktop/PaginaDeInicio-Agenda/start.html"
-}
+} 
 
 function atualizaCalendario(mes, ano) {
     let primeiroDia = (new Date(ano, mes)).getDay()
@@ -94,9 +90,6 @@ function atualizaCalendario(mes, ano) {
                 celula.style.textAlign="center" // Ainda não sei se fica melhor centralizado ou não
                 celula.appendChild(texto) 
                 linha.appendChild(celula)
-                celula.addEventListener("click", ()=>{
-                    iniciaAgenda(ano, mes, texto.nodeValue)
-                })
                 dia++
             }
         }
@@ -115,8 +108,7 @@ function atualizaCalendario(mes, ano) {
             botaoProximo.style.visibility="visible"
         }
     }
-
-    function iniciaAgenda(ano, mes, dia){
-        window.location.href = "agenda.html?dia=" + dia +"&mes=" + mes +"&ano=" + ano;
-    }
 }
+
+
+atualizaCalendario(mesAtual, anoAtual)
